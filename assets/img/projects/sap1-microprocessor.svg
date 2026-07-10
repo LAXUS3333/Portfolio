@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<g id="p">
+  <rect width="1600" height="900" fill="#090B0D"/>
+  <path d="M 40 66 V 40 H 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1534 40 H 1560 V 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1560 834 V 860 H 1534" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 66 860 H 40 V 834" fill="none" stroke="#232A33" stroke-width="3"/>
+  <text x="80" y="78" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#5A6472" text-anchor="start">SAP-1 · 8-BIT CPU · LOGISIM</text>
+  <text x="770" y="108" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3" text-anchor="start">W BUS</text>
+  <path d="M 800 130 L 800 760" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <rect x="200" y="120" width="320" height="110" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="222" y="164" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">PC</text>
+  <text x="222" y="198" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">program ctr</text>
+  <path d="M 520 175 L 788 175" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 798 175 l -18 -10 v 20 z" fill="#E4572E"/>
+  <rect x="200" y="280" width="320" height="110" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="222" y="324" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">MAR</text>
+  <path d="M 520 335 L 788 335" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 798 335 l -18 -10 v 20 z" fill="#E4572E"/>
+  <rect x="200" y="440" width="320" height="110" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="222" y="484" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">RAM</text>
+  <path d="M 520 495 L 788 495" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 798 495 l -18 -10 v 20 z" fill="#E4572E"/>
+  <rect x="200" y="600" width="320" height="110" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="222" y="644" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">IR</text>
+  <text x="222" y="678" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">instruction</text>
+  <path d="M 520 655 L 788 655" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 798 655 l -18 -10 v 20 z" fill="#E4572E"/>
+  <rect x="1080" y="120" width="320" height="110" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="1102" y="164" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">A REG</text>
+  <text x="1102" y="198" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">accumulator</text>
+  <path d="M 812 175 L 1068 175" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1078 175 l -18 -10 v 20 z" fill="#E4572E"/>
+  <rect x="1080" y="280" width="320" height="110" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="1102" y="324" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">ALU +/-</text>
+  <text x="1102" y="358" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">add · sub</text>
+  <path d="M 812 335 L 1068 335" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1078 335 l -18 -10 v 20 z" fill="#E4572E"/>
+  <rect x="1080" y="440" width="320" height="110" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="1102" y="484" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">B REG</text>
+  <path d="M 812 495 L 1068 495" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1078 495 l -18 -10 v 20 z" fill="#E4572E"/>
+  <rect x="1080" y="600" width="320" height="110" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="1102" y="644" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">OUT</text>
+  <path d="M 812 655 L 1068 655" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1078 655 l -18 -10 v 20 z" fill="#E4572E"/>
+  <rect x="620" y="770" width="360" height="90" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="642" y="814" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">CTRL</text>
+  <text x="642" y="848" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">control logic</text>
+</g>
+</svg>

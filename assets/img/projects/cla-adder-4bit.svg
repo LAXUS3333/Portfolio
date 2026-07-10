@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<g id="p">
+  <rect width="1600" height="900" fill="#090B0D"/>
+  <path d="M 40 66 V 40 H 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1534 40 H 1560 V 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1560 834 V 860 H 1534" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 66 860 H 40 V 834" fill="none" stroke="#232A33" stroke-width="3"/>
+  <text x="80" y="78" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#5A6472" text-anchor="start">4-BIT CLA · CADENCE VIRTUOSO · GPDK90</text>
+  <text x="90" y="300" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">A[3:0]</text>
+  <path d="M 210 292 L 560 292" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 572 292 l -18 -10 v 20 z" fill="#E4572E"/>
+  <text x="90" y="450" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">B[3:0]</text>
+  <path d="M 210 442 L 560 442" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 572 442 l -18 -10 v 20 z" fill="#E4572E"/>
+  <text x="90" y="600" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">CIN</text>
+  <path d="M 210 592 L 560 592" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 572 592 l -18 -10 v 20 z" fill="#E4572E"/>
+  <rect x="580" y="220" width="460" height="440" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="602" y="264" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">CLA</text>
+  <text x="602" y="298" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">carry look-ahead</text>
+  <text x="602" y="340" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3" text-anchor="start">P = A xor B</text>
+  <text x="602" y="380" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3" text-anchor="start">G = A and B</text>
+  <path d="M 1040 340 L 1380 340" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1392 340 l -18 -10 v 20 z" fill="#E4572E"/>
+  <text x="1404" y="348" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">SUM[3:0]</text>
+  <path d="M 1040 540 L 1380 540" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1392 540 l -18 -10 v 20 z" fill="#E4572E"/>
+  <text x="1404" y="548" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">COUT</text>
+  <text x="580" y="760" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3" text-anchor="start">DRC ok · LVS ok · RCX extracted</text>
+</g>
+</svg>

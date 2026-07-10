@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<g id="p">
+  <rect width="1600" height="900" fill="#090B0D"/>
+  <path d="M 40 66 V 40 H 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1534 40 H 1560 V 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1560 834 V 860 H 1534" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 66 860 H 40 V 834" fill="none" stroke="#232A33" stroke-width="3"/>
+  <text x="80" y="78" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#5A6472" text-anchor="start">WEATHER STATION · ATMEGA328P</text>
+  <rect x="80" y="240" width="280" height="130" rx="10" fill="#10141B" stroke="#E0B33C" stroke-width="3"/>
+  <text x="102" y="284" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E0B33C">DHT11</text>
+  <text x="102" y="318" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">temp · humid</text>
+  <rect x="80" y="560" width="280" height="130" rx="10" fill="#10141B" stroke="#E0B33C" stroke-width="3"/>
+  <text x="102" y="604" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E0B33C">BMP180</text>
+  <text x="102" y="638" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">pressure</text>
+  <rect x="580" y="350" width="380" height="200" rx="10" fill="#10141B" stroke="#E0B33C" stroke-width="3"/>
+  <text x="602" y="394" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E0B33C">ATMEGA328P</text>
+  <text x="602" y="428" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">C++ firmware</text>
+  <rect x="1180" y="240" width="340" height="130" rx="10" fill="#10141B" stroke="#E0B33C" stroke-width="3"/>
+  <text x="1202" y="284" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E0B33C">LCD</text>
+  <text x="1202" y="318" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">readout</text>
+  <rect x="1180" y="560" width="340" height="130" rx="10" fill="#10141B" stroke="#E0B33C" stroke-width="3"/>
+  <text x="1202" y="604" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E0B33C">FAN 5V</text>
+  <text x="1202" y="638" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">auto &gt; 25 degC</text>
+  <path d="M 360 305 L 460 305 L 460 420 L 562 420" fill="none" stroke="#E0B33C" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 574 420 l -18 -10 v 20 z" fill="#E0B33C"/>
+  <path d="M 360 625 L 460 625 L 460 480 L 562 480" fill="none" stroke="#E0B33C" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 574 480 l -18 -10 v 20 z" fill="#E0B33C"/>
+  <path d="M 960 420 L 1080 420 L 1080 305 L 1162 305" fill="none" stroke="#E0B33C" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1174 305 l -18 -10 v 20 z" fill="#E0B33C"/>
+  <path d="M 960 480 L 1080 480 L 1080 625 L 1162 625" fill="none" stroke="#E0B33C" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1174 625 l -18 -10 v 20 z" fill="#E0B33C"/>
+</g>
+</svg>

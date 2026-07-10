@@ -1,0 +1,6 @@
+# Custom folders
+.claude/
+.puku/
+
+# Custom files
+CLAUDE.md

@@ -1,0 +1,982 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nafis Azmain — Portfolio</title>
+    <meta name="description" content="Nafis Azmain — Electronics & Telecommunication Engineer, Machine Learning Developer, Hardware–Software Co-Designer." />
+    <meta name="theme-color" content="#0E1013" />
+    <link rel="icon" href="assets/img/logo-96.png" />
+    <link rel="preload" href="assets/fonts/bricolage-grotesque-latin-vf.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/public-sans-latin-vf.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="preload" href="assets/fonts/jetbrains-mono-latin-vf.woff2" as="font" type="font/woff2" crossorigin />
+    <link rel="stylesheet" href="assets/css/site.css" />
+    <script>
+        /* Capability bridge for CSS — prefs.js is the source of truth for modules */
+        (function () {
+            var c = document.documentElement.classList;
+            c.add('js');
+            var conn = navigator.connection;
+            if (matchMedia('(prefers-reduced-motion: no-preference)').matches && !(conn && conn.saveData)) {
+                c.add('motion-ok');
+            }
+        })();
+    </script>
+    <script type="importmap">
+    {"imports": {
+      "gsap": "https://esm.sh/gsap@3.15.0",
+      "gsap/ScrollTrigger": "https://esm.sh/gsap@3.15.0/ScrollTrigger",
+      "gsap/SplitText": "https://esm.sh/gsap@3.15.0/SplitText",
+      "lenis": "https://esm.sh/lenis@1.3.25"
+    }}
+    </script>
+    <script type="module" src="assets/js/site.js"></script>
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- Icon sprite -->
+<svg hidden aria-hidden="true">
+    <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.8 10.9.6.1.8-.2.8-.6v-2c-3.2.7-3.9-1.4-3.9-1.4-.5-1.3-1.3-1.7-1.3-1.7-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.6-.3-5.3-1.3-5.3-5.8 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.6 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.5-2.7 5.5-5.3 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.5-1.5 7.8-5.8 7.8-10.9C23.5 5.7 18.3.5 12 .5z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.95v5.66H9.36V9h3.41v1.56h.05c.48-.9 1.65-1.85 3.4-1.85 3.63 0 4.3 2.39 4.3 5.5v6.24zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/></symbol>
+    <symbol id="i-ext" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><path d="M15 3h6v6"/><path d="M10 14 21 3"/></g></symbol>
+    <symbol id="i-location" viewBox="0 0 24 24"><path fill="currentColor" d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5a2.5 2.5 0 1 1 0-5 2.5 2.5 0 0 1 0 5z"/></symbol>
+    <symbol id="i-clock" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></g></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"/></g></symbol>
+    <symbol id="i-x" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="m6 6 12 12M18 6 6 18"/></g></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M5 12l7-7 7 7"/></g></symbol>
+    <symbol id="i-eye" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"/><circle cx="12" cy="12" r="3"/></g></symbol>
+</svg>
+
+<header class="site-header">
+    <div class="container nav-bar">
+        <a href="#hero" class="wordmark" aria-label="Nafis Azmain — Home">
+            <img src="assets/img/logo-96.webp" alt="" width="141" height="96" />
+        </a>
+        <nav aria-label="Primary">
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#certifications">Certificates</a></li>
+                <li><a href="#achievements">Achievements</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <button class="nav-toggle" popovertarget="nav-drawer" aria-label="Open menu">
+            <svg aria-hidden="true"><use href="#i-menu" /></svg>
+        </button>
+    </div>
+</header>
+
+<div id="nav-drawer" class="nav-drawer" popover>
+    <button class="drawer-close" popovertarget="nav-drawer" popovertargetaction="hide" aria-label="Close menu">
+        <svg aria-hidden="true"><use href="#i-x" /></svg>
+    </button>
+    <ul>
+        <li><a href="#hero">Home</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certifications">Certificates</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</div>
+
+<main id="main">
+
+    <!-- ============ HERO ============ -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-grid">
+                <div class="hero-copy">
+                    <p class="hero-eyebrow"><span class="dot" aria-hidden="true"></span> Available for new opportunities</p>
+                    <h1 class="hero-name">Hi, I'm <span class="grad">Nafis Azmain</span></h1>
+                    <p class="hero-tagline">Electronics &amp; Telecommunication Engineer <span class="role" aria-hidden="true">·</span> Machine Learning Developer <span class="role" aria-hidden="true">·</span> Hardware–Software Co-Designer</p>
+                    <p class="hero-intro">
+                        I work across the full stack of modern technology — from transistor-level circuit design in Cadence Virtuoso to deep-learning models and full-stack web apps. I thrive on hardware–software co-design, turning complex problems into clean, high-performance solutions. I'm now looking for a challenging technical role where I can engineer things that matter.
+                    </p>
+                    <div class="cta-row">
+                        <a href="#projects" class="btn btn-primary" data-magnetic>View My Projects <span aria-hidden="true">→</span></a>
+                        <a href="#contact" class="btn btn-ghost" data-magnetic>Get In Touch <span aria-hidden="true">✉</span></a>
+                    </div>
+                    <ul class="socials" aria-label="Social profiles">
+                        <li><a href="https://github.com/LAXUS3333" target="_blank" rel="noopener" aria-label="GitHub"><svg aria-hidden="true"><use href="#i-github" /></svg></a></li>
+                        <li><a href="https://linkedin.com/in/NafisAzmain" target="_blank" rel="noopener" aria-label="LinkedIn"><svg aria-hidden="true"><use href="#i-linkedin" /></svg></a></li>
+                        <li><a href="mailto:nafiss3333@gmail.com" aria-label="Email"><svg aria-hidden="true"><use href="#i-mail" /></svg></a></li>
+                    </ul>
+                </div>
+
+                <div class="hero-board" data-floorplan>
+                    <canvas class="floorplan-canvas" aria-hidden="true"></canvas>
+                    <ul class="floorplan-nav" aria-label="Sections">
+                        <li class="fp-note" aria-hidden="true">// floorplan — jump to a block</li>
+                        <li><a href="#experience">EXP — experience</a></li>
+                        <li><a href="#education">EDU — education</a></li>
+                        <li><a href="#projects">PRJ — projects</a></li>
+                        <li><a href="#skills">SKL — skills</a></li>
+                        <li><a href="#certifications">CRT — certificates</a></li>
+                        <li><a href="#achievements">ACH — achievements</a></li>
+                        <li><a href="#contact">I/O — contact</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- About -->
+            <div class="section-head lead-head" data-reveal>
+                <p class="sec-eyebrow">about</p>
+                <h2 class="sec-title">About Me</h2>
+                <p class="sec-sub">A quick look at how I think, what I'm aiming for, and where you can find my work.</p>
+            </div>
+            <div class="about-grid">
+                <aside class="about-facts card" data-reveal>
+                    <img class="about-photo" src="assets/img/profile-864.webp" srcset="assets/img/profile-480.webp 480w, assets/img/profile-864.webp 864w" sizes="(max-width: 860px) calc(100vw - 2rem), 340px" alt="Portrait of Nafis Azmain" width="864" height="1184" loading="lazy" decoding="async" />
+                    <h3 class="facts-title">quick facts</h3>
+                    <ul class="facts-list">
+                        <li><span class="fact-k">role</span><span class="fact-v">ETE Engineer · ML Developer</span></li>
+                        <li><span class="fact-k">education</span><span class="fact-v">B.Sc. ETE, CUET</span></li>
+                        <li><span class="fact-k">focus</span><span class="fact-v">VLSI · ML · Full-Stack</span></li>
+                        <li><span class="fact-k">location</span><span class="fact-v">Chattogram, Bangladesh</span></li>
+                        <li><span class="fact-k">status</span><span class="fact-v"><span class="fact-dot" aria-hidden="true"></span>Open to work</span></li>
+                    </ul>
+                    <div class="facts-stats">
+                        <div><strong>20+</strong><span>GitHub repos</span></div>
+                        <div><strong>15+</strong><span>Certificates</span></div>
+                        <div><strong>3+</strong><span>National wins</span></div>
+                    </div>
+                </aside>
+                <div class="about-body">
+                    <div class="card prose" data-reveal>
+                        <p>I'm a final-year Electronics &amp; Telecommunication Engineering student at Chittagong University of Engineering and Technology (CUET), graduating in 2026 with a current GPA of 3.42/4.0. My work sits at the intersection of three worlds — VLSI and circuit design, machine learning, and software development — and I enjoy moving between them. On the hardware side, I design and verify circuits in Cadence Virtuoso using gpdk90 technology, running full DRC, LVS, and RCX flows. On the software and ML side, I build deep learning models with PyTorch and scikit-learn, handle data with the Python scientific stack, and ship web applications with PHP, React, and SQL. Beyond the technical, I've taken on leadership roles and earned recognition in national competitions. What sets me apart is range — I can take an idea from silicon to software and everything in between.</p>
+                    </div>
+                    <div class="mv-grid">
+                        <div class="mv-card card" data-reveal>
+                            <h4>mission</h4>
+                            <p>To engineer high-performance, end-to-end solutions that bridge hardware and software — solving real problems with rigor, creativity, and a multidisciplinary mindset.</p>
+                        </div>
+                        <div class="mv-card card" data-reveal>
+                            <h4>vision</h4>
+                            <p>To become a versatile technologist shaping the next generation of intelligent systems, where silicon, code, and machine learning work seamlessly together.</p>
+                        </div>
+                    </div>
+                    <div class="view-work" data-reveal>
+                        <span class="vw-label">View my work:</span>
+                        <a href="#experience" class="pill">Experience</a>
+                        <a href="#education" class="pill">Education</a>
+                        <a href="#projects" class="pill">Projects</a>
+                        <a href="#skills" class="pill">Skills</a>
+                        <a href="#certifications" class="pill">Certificates</a>
+                        <a href="#achievements" class="pill">Achievements</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ EXPERIENCE ============ -->
+    <section id="experience" class="section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <p class="sec-eyebrow">experience</p>
+                <h2 class="sec-title">Experience</h2>
+                <p class="sec-sub">Hands-on industry experience spanning VLSI design, full-stack development, and engineering leadership.</p>
+            </div>
+            <ol class="timeline">
+                <li class="tl-item" style="--tl-c: var(--layer-vlsi)" data-reveal>
+                    <div class="tl-rail" aria-hidden="true"><span class="tl-num">01</span></div>
+                    <div class="tl-card card">
+                        <div class="tl-head">
+                            <div>
+                                <h3 class="tl-role">VLSI Design Intern</h3>
+                                <p class="tl-org">Ulkasemi Pvt. Limited</p>
+                            </div>
+                            <span class="tl-date">Feb 2025 – Present</span>
+                        </div>
+                        <ul>
+                            <li>Designed and verified 8 combinational and sequential circuits in Cadence Virtuoso using gpdk90 technology — including a 4-bit carry-look-ahead adder, multiplexers, decoders, D latches, and flip-flops.</li>
+                            <li>Performed full physical verification flows: Design Rule Check (DRC), Layout Versus Schematic (LVS), and parasitic extraction (RCX) to validate layout correctness against schematic intent.</li>
+                            <li>Authored a professional PowerPoint presentation and published a technical LinkedIn blog post summarizing the entire layout design process and verification methodology.</li>
+                            <li>Developed strong proficiency in industry-standard EDA tools and design flows, gaining practical exposure to the full implementation path from schematic to fabrication-ready layout.</li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="tl-item" style="--tl-c: var(--layer-web)" data-reveal>
+                    <div class="tl-rail" aria-hidden="true"><span class="tl-num">02</span></div>
+                    <div class="tl-card card">
+                        <div class="tl-head">
+                            <div>
+                                <h3 class="tl-role">Web Developer</h3>
+                                <p class="tl-org">Streams Tech Solutions</p>
+                            </div>
+                            <span class="tl-date">June 2024 – Dec 2024</span>
+                        </div>
+                        <ul>
+                            <li>Architected and shipped a full-stack e-commerce platform with PHP, JavaScript, MySQL, and Bootstrap 5, serving a real client base end to end.</li>
+                            <li>Built a real-time gas-leakage monitoring system with React, Node.js, and Firebase, integrating ESP32 and Arduino hardware with a live cloud dashboard.</li>
+                            <li>Created a face-recognition based attendance tracker using Python, Flask, and the face_recognition library, processing live webcam streams.</li>
+                            <li>Mentored junior developers on JavaScript fundamentals and modern web-development workflow, supporting team onboarding and code reviews.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <p class="sec-eyebrow">education</p>
+                <h2 class="sec-title">Education</h2>
+                <p class="sec-sub">My academic foundation in engineering, with a strong focus on electronics, communication, and applied computing.</p>
+            </div>
+            <ol class="timeline">
+                <li class="tl-item" data-reveal>
+                    <div class="tl-rail" aria-hidden="true"><span class="tl-num">01</span></div>
+                    <div class="tl-card card">
+                        <div class="tl-head">
+                            <div>
+                                <h3 class="tl-role">B.Sc. in Electronics &amp; Telecommunication Engineering</h3>
+                                <p class="tl-org">Chittagong University of Engineering and Technology (CUET)</p>
+                            </div>
+                            <span class="tl-date">2022 – 2026</span>
+                        </div>
+                        <p class="tl-meta">Current GPA: <strong>3.42 / 4.00</strong></p>
+                        <ul>
+                            <li>Studying core ETE subjects: VLSI design, digital signal processing, communication systems, microcontrollers, and data structures.</li>
+                            <li>Active member of CUET Robotics &amp; Programming Club — collaborated on inter-university projects and technical workshops.</li>
+                            <li>Selected through the highly competitive CUET admission test (among the top 1.5% of applicants nationwide).</li>
+                            <li>Consistently maintained a strong academic record while balancing multiple internships, leadership roles, and competitive programming.</li>
+                        </ul>
+                    </div>
+                </li>
+            </ol>
+        </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section id="projects" class="section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <p class="sec-eyebrow">projects</p>
+                <h2 class="sec-title">Projects</h2>
+                <p class="sec-sub">Real work from my GitHub — spanning VLSI &amp; digital design, machine learning, computer vision, edge AI, data analysis, and full-stack web. <a href="https://github.com/LAXUS3333" target="_blank" rel="noopener">See all on GitHub →</a></p>
+            </div>
+
+            <div class="filters" role="group" aria-label="Filter projects" hidden>
+                <button class="filter-btn" data-filter="all" aria-pressed="true">all</button>
+                <button class="filter-btn" data-filter="ml" aria-pressed="false">ml</button>
+                <button class="filter-btn" data-filter="cv" aria-pressed="false">cv</button>
+                <button class="filter-btn" data-filter="vlsi" aria-pressed="false">vlsi</button>
+                <button class="filter-btn" data-filter="embedded" aria-pressed="false">embedded</button>
+                <button class="filter-btn" data-filter="web" aria-pressed="false">web</button>
+            </div>
+            <p class="filter-status mono dim" aria-live="polite"></p>
+
+            <div class="proj-wrap">
+                <ul class="proj-grid">
+
+                    <li class="proj-card" data-cat="ml" data-slug="vqa" style="--c: var(--layer-ml)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/vqa.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">ml</span><span class="proj-lang">Jupyter</span></div>
+                        <h3 class="proj-title">Visual Question Answering</h3>
+                        <p class="proj-desc">A multimodal transformer for visual question answering that fuses a ViT image encoder with a BERT text encoder, then speaks its answers aloud via gTTS text-to-speech.</p>
+                        <div class="pills"><span class="pill">PyTorch</span><span class="pill">ViT</span><span class="pill">BERT</span><span class="pill">gTTS</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="vqa" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Visual-Question-Answering-using-Multimodal-Transformer" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="vqa">
+                        <p class="chip" style="--c: var(--layer-ml)">ml</p>
+                        <p>A multimodal transformer for visual question answering that fuses a ViT image encoder with a BERT text encoder, then speaks its answers aloud via gTTS text-to-speech.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">PyTorch</span><span class="pill">ViT</span><span class="pill">BERT</span><span class="pill">gTTS</span><span class="pill">Jupyter</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Visual-Question-Answering-using-Multimodal-Transformer" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="cv" data-slug="waste-classification" style="--c: var(--layer-cv)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/waste-classification.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">cv</span><span class="proj-lang">Python</span></div>
+                        <h3 class="proj-title">Waste Classification</h3>
+                        <p class="proj-metric">6-class · INT8</p>
+                        <p class="proj-desc">A 6-class waste image classifier built on a CBAM-attention MobileNetV3-Small backbone, then quantized to INT8 ONNX/TFLite for fast, low-power inference on edge devices.</p>
+                        <div class="pills"><span class="pill">PyTorch</span><span class="pill">MobileNetV3</span><span class="pill">CBAM</span><span class="pill">ONNX · INT8</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="waste-classification" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Waste-Classification" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="waste-classification">
+                        <p class="chip" style="--c: var(--layer-cv)">cv</p>
+                        <p>A 6-class waste image classifier built on a CBAM-attention MobileNetV3-Small backbone, then quantized to INT8 ONNX/TFLite for fast, low-power inference on edge devices.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">PyTorch</span><span class="pill">MobileNetV3</span><span class="pill">CBAM</span><span class="pill">ONNX · INT8</span><span class="pill">Python</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Waste-Classification" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="embedded" data-slug="pi-edge-dashboard" style="--c: var(--layer-embedded)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/pi-edge-dashboard.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">embedded</span><span class="proj-lang">Python</span></div>
+                        <h3 class="proj-title">Pi Edge Dashboard</h3>
+                        <p class="proj-desc">A phone-friendly web dashboard for a Raspberry Pi that streams a live, annotated MJPEG camera feed alongside real-time stats — FPS, inference latency, and the model's current prediction.</p>
+                        <div class="pills"><span class="pill">Python</span><span class="pill">Raspberry Pi</span><span class="pill">TFLite</span><span class="pill">MJPEG</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="pi-edge-dashboard" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Pi-Dashboard" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="pi-edge-dashboard">
+                        <p class="chip" style="--c: var(--layer-embedded)">embedded</p>
+                        <p>A phone-friendly web dashboard for a Raspberry Pi that streams a live, annotated MJPEG camera feed alongside real-time stats — FPS, inference latency, and the model's current prediction.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">Python</span><span class="pill">Raspberry Pi</span><span class="pill">TFLite</span><span class="pill">MJPEG</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Pi-Dashboard" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="cv" data-slug="object-detection-pi4" style="--c: var(--layer-cv)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/object-detection-pi4.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">cv</span><span class="proj-lang">Python</span></div>
+                        <h3 class="proj-title">Object Detection on Pi 4</h3>
+                        <p class="proj-desc">Real-time YOLO object detection running on a Raspberry Pi 4 — a compact, deployable computer-vision pipeline tuned for constrained edge hardware.</p>
+                        <div class="pills"><span class="pill">Python</span><span class="pill">YOLO</span><span class="pill">OpenCV</span><span class="pill">Raspberry Pi</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="object-detection-pi4" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Object-Detection-using-Raspberry-Pi-4" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="object-detection-pi4">
+                        <p class="chip" style="--c: var(--layer-cv)">cv</p>
+                        <p>Real-time YOLO object detection running on a Raspberry Pi 4 — a compact, deployable computer-vision pipeline tuned for constrained edge hardware.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">Python</span><span class="pill">YOLO</span><span class="pill">OpenCV</span><span class="pill">Raspberry Pi</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Object-Detection-using-Raspberry-Pi-4" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="ml" data-slug="cross-domain-eval" style="--c: var(--layer-ml)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/cross-domain-eval.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">ml</span><span class="proj-lang">Python</span></div>
+                        <h3 class="proj-title">Cross-Domain Eval</h3>
+                        <p class="proj-desc">A benchmarking study comparing how ConvNeXt and EfficientNet-B0 generalize across domains, measuring robustness when models meet data that differs from their training distribution.</p>
+                        <div class="pills"><span class="pill">PyTorch</span><span class="pill">ConvNeXt</span><span class="pill">EfficientNet</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="cross-domain-eval" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Cross-Domain-Eval" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="cross-domain-eval">
+                        <p class="chip" style="--c: var(--layer-ml)">ml</p>
+                        <p>A benchmarking study comparing how ConvNeXt and EfficientNet-B0 generalize across domains, measuring robustness when models meet data that differs from their training distribution.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">PyTorch</span><span class="pill">ConvNeXt</span><span class="pill">EfficientNet</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Cross-Domain-Eval" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="ml" data-slug="disease-prediction" style="--c: var(--layer-ml)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/disease-prediction.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">ml</span><span class="proj-lang">Jupyter</span></div>
+                        <h3 class="proj-title">Disease Prediction</h3>
+                        <p class="proj-desc">A machine-learning pipeline that predicts disease from patient symptom data, comparing classical classifiers across a labelled medical dataset.</p>
+                        <div class="pills"><span class="pill">scikit-learn</span><span class="pill">Pandas</span><span class="pill">Jupyter</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="disease-prediction" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Disease-Prediction-using-ML" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="disease-prediction">
+                        <p class="chip" style="--c: var(--layer-ml)">ml</p>
+                        <p>A machine-learning pipeline that predicts disease from patient symptom data, comparing classical classifiers across a labelled medical dataset.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">scikit-learn</span><span class="pill">Pandas</span><span class="pill">Jupyter</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Disease-Prediction-using-ML" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="ml" data-slug="brazil-house-prices" style="--c: var(--layer-ml)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/brazil-house-prices.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">ml</span><span class="proj-lang">Jupyter</span></div>
+                        <h3 class="proj-title">Brazil House Prices</h3>
+                        <p class="proj-desc">Exploratory data analysis of Brazilian housing — segmenting and visualizing prices by state and region, and surfacing the drivers behind regional price variation.</p>
+                        <div class="pills"><span class="pill">Pandas</span><span class="pill">Matplotlib</span><span class="pill">Seaborn</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="brazil-house-prices" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/House-Prices-in-Brasil" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="brazil-house-prices">
+                        <p class="chip" style="--c: var(--layer-ml)">ml</p>
+                        <p>Exploratory data analysis of Brazilian housing — segmenting and visualizing prices by state and region, and surfacing the drivers behind regional price variation.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">Pandas</span><span class="pill">Matplotlib</span><span class="pill">Seaborn</span><span class="pill">Jupyter</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/House-Prices-in-Brasil" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="ml" data-slug="pokemon-eda" style="--c: var(--layer-ml)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/pokemon-eda.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">ml</span><span class="proj-lang">Notebook</span></div>
+                        <h3 class="proj-title">Pokémon EDA</h3>
+                        <p class="proj-desc">An exploratory analysis of a Generation 1–6 Pokémon dataset from Kaggle, digging into stat distributions, type matchups, and the trends that define each generation.</p>
+                        <div class="pills"><span class="pill">Pandas</span><span class="pill">Colab</span><span class="pill">Data Viz</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="pokemon-eda" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Pokemon-Exploratory-Data-Analysis" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="pokemon-eda">
+                        <p class="chip" style="--c: var(--layer-ml)">ml</p>
+                        <p>An exploratory analysis of a Generation 1–6 Pokémon dataset from Kaggle, digging into stat distributions, type matchups, and the trends that define each generation.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">Pandas</span><span class="pill">Colab</span><span class="pill">Data Viz</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Pokemon-Exploratory-Data-Analysis" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="ml" data-slug="imdb-movies-eda" style="--c: var(--layer-ml)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/imdb-movies-eda.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">ml</span><span class="proj-lang">Jupyter</span></div>
+                        <h3 class="proj-title">IMDb Movies EDA</h3>
+                        <p class="proj-desc">A data exploration of an IMDb movies dataset from Kaggle — analyzing ratings, genres, and runtime to find what correlates with a film's success.</p>
+                        <div class="pills"><span class="pill">Pandas</span><span class="pill">NumPy</span><span class="pill">Matplotlib</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="imdb-movies-eda" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/IMDb-Movies-Exploratory-Data-Analysis" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="imdb-movies-eda">
+                        <p class="chip" style="--c: var(--layer-ml)">ml</p>
+                        <p>A data exploration of an IMDb movies dataset from Kaggle — analyzing ratings, genres, and runtime to find what correlates with a film's success.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">Pandas</span><span class="pill">NumPy</span><span class="pill">Matplotlib</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/IMDb-Movies-Exploratory-Data-Analysis" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="vlsi" data-slug="cla-adder-4bit" style="--c: var(--layer-vlsi)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/cla-adder-4bit.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">vlsi</span><span class="proj-lang">Cadence</span></div>
+                        <h3 class="proj-title">4-Bit Carry-Look-Ahead Adder</h3>
+                        <p class="proj-metric">4-bit · DRC/LVS clean</p>
+                        <p class="proj-desc">A full custom-IC design of a 4-bit carry-look-ahead adder — schematic, layout, and symbol with extracted netlists and a verification report covering DRC, LVS, and timing.</p>
+                        <div class="pills"><span class="pill">Cadence Virtuoso</span><span class="pill">gpdk90</span><span class="pill">DRC · LVS · RCX</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="cla-adder-4bit" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/4-Bit-Carry-Look-Ahead-Adder" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="cla-adder-4bit">
+                        <p class="chip" style="--c: var(--layer-vlsi)">vlsi</p>
+                        <p>A full custom-IC design of a 4-bit carry-look-ahead adder — schematic, layout, and symbol with extracted netlists and a verification report covering DRC, LVS, and timing.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">Cadence Virtuoso</span><span class="pill">gpdk90</span><span class="pill">DRC · LVS · RCX</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/4-Bit-Carry-Look-Ahead-Adder" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="vlsi" data-slug="sap1-microprocessor" style="--c: var(--layer-vlsi)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/sap1-microprocessor.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">vlsi</span><span class="proj-lang">Logisim</span></div>
+                        <h3 class="proj-title">SAP-1 Microprocessor</h3>
+                        <p class="proj-metric">8-bit CPU</p>
+                        <p class="proj-desc">A component-up simulation of the classic SAP-1 8-bit CPU architecture in Logisim — general-purpose registers, an adder/subtractor ALU, program counter, and control logic, with full lab reports.</p>
+                        <div class="pills"><span class="pill">Logisim</span><span class="pill">Digital Design</span><span class="pill">Computer Arch</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="sap1-microprocessor" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/SAP-1-Microprocessor-Design" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="sap1-microprocessor">
+                        <p class="chip" style="--c: var(--layer-vlsi)">vlsi</p>
+                        <p>A component-up simulation of the classic SAP-1 8-bit CPU architecture in Logisim — general-purpose registers, an adder/subtractor ALU, program counter, and control logic, with full lab reports.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">Logisim</span><span class="pill">Digital Design</span><span class="pill">Computer Arch</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/SAP-1-Microprocessor-Design" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="embedded" data-slug="atmega328p-weather-station" style="--c: var(--layer-embedded)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/atmega328p-weather-station.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">embedded</span><span class="proj-lang">C++</span></div>
+                        <h3 class="proj-title">ATMega328P Weather Station</h3>
+                        <p class="proj-metric">fan &gt; 25 °C</p>
+                        <p class="proj-desc">A working weather-station prototype built around the ATMega328P with DHT11 and BMP180 sensors, an LCD readout, and a 5 V fan that kicks in automatically above 25 °C — hardware built from scratch.</p>
+                        <div class="pills"><span class="pill">C++</span><span class="pill">ATMega328P</span><span class="pill">DHT11 · BMP180</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="atmega328p-weather-station" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Weather-Station-using-ATMega328P" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="atmega328p-weather-station">
+                        <p class="chip" style="--c: var(--layer-embedded)">embedded</p>
+                        <p>A working weather-station prototype built around the ATMega328P with DHT11 and BMP180 sensors, an LCD readout, and a 5 V fan that kicks in automatically above 25 °C — hardware built from scratch.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">C++</span><span class="pill">ATMega328P</span><span class="pill">DHT11 · BMP180</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Weather-Station-using-ATMega328P" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="vlsi" data-slug="binary-gray-converter" style="--c: var(--layer-vlsi)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/binary-gray-converter.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">vlsi</span><span class="proj-lang">Logic</span></div>
+                        <h3 class="proj-title">Binary → Gray Code Converter</h3>
+                        <p class="proj-desc">A clean combinational-logic design that converts binary to Gray code, built and verified as part of digital-logic coursework.</p>
+                        <div class="pills"><span class="pill">Digital Logic</span><span class="pill">Combinational</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="binary-gray-converter" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Binary-to-Gray-Code-Converter" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="binary-gray-converter">
+                        <p class="chip" style="--c: var(--layer-vlsi)">vlsi</p>
+                        <p>A clean combinational-logic design that converts binary to Gray code, built and verified as part of digital-logic coursework.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">Digital Logic</span><span class="pill">Combinational</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Binary-to-Gray-Code-Converter" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="web" data-slug="arcade-pulse" style="--c: var(--layer-web)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/arcade-pulse.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">web</span><span class="proj-lang">PHP</span></div>
+                        <h3 class="proj-title">Arcade Pulse — E-Commerce</h3>
+                        <p class="proj-desc">A full e-commerce website built end to end — product catalog, cart, and checkout on a hand-rolled PHP backend with a MySQL database and a custom HTML/CSS/JS storefront.</p>
+                        <div class="pills"><span class="pill">PHP</span><span class="pill">MySQL</span><span class="pill">JavaScript</span><span class="pill">Bootstrap</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="arcade-pulse" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Arcade-Pulse-php-e-commerce-project" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="arcade-pulse">
+                        <p class="chip" style="--c: var(--layer-web)">web</p>
+                        <p>A full e-commerce website built end to end — product catalog, cart, and checkout on a hand-rolled PHP backend with a MySQL database and a custom HTML/CSS/JS storefront.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">PHP</span><span class="pill">MySQL</span><span class="pill">JavaScript</span><span class="pill">Bootstrap</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Arcade-Pulse-php-e-commerce-project" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="web" data-slug="catch-falling-objects" style="--c: var(--layer-web)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/catch-falling-objects.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">web</span><span class="proj-lang">JS</span></div>
+                        <h3 class="proj-title">Catch the Falling Objects</h3>
+                        <p class="proj-metric">0 deps</p>
+                        <p class="proj-desc">A polished arcade-style 2D catching game on the HTML5 Canvas — zero dependencies, zero build step. Move the basket, catch the objects, and survive as they fall faster.</p>
+                        <div class="pills"><span class="pill">JavaScript</span><span class="pill">HTML5 Canvas</span><span class="pill">No deps</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="catch-falling-objects" hidden>case study →</button>
+                            <div class="proj-links">
+                                <a href="https://laxus3333.github.io/Chicken-Eating-Game/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-ext" /></svg> Live Demo</a>
+                                <a href="https://github.com/LAXUS3333/Chicken-Eating-Game" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a>
+                            </div>
+                        </div>
+                    </li>
+                    <template data-proj="catch-falling-objects">
+                        <p class="chip" style="--c: var(--layer-web)">web</p>
+                        <p>A polished arcade-style 2D catching game on the HTML5 Canvas — zero dependencies, zero build step. Move the basket, catch the objects, and survive as they fall faster.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">JavaScript</span><span class="pill">HTML5 Canvas</span><span class="pill">No deps</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links">
+                            <a class="btn btn-ghost" href="https://laxus3333.github.io/Chicken-Eating-Game/" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-ext" /></svg> Live Demo</a>
+                            <a class="btn btn-ghost" href="https://github.com/LAXUS3333/Chicken-Eating-Game" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a>
+                        </div>
+                    </template>
+
+                    <li class="proj-card" data-cat="web" data-slug="omega-ai" style="--c: var(--layer-web)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/omega-ai.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">web</span><span class="proj-lang">HTML</span></div>
+                        <h3 class="proj-title">OMEGA AI</h3>
+                        <p class="proj-desc">A custom AI assistant that integrates the DeepSeek-R1 reasoning model and tailors its behaviour to a personalized set of preferences, wrapped in a lightweight web interface.</p>
+                        <div class="pills"><span class="pill">DeepSeek-R1</span><span class="pill">LLM</span><span class="pill">HTML · JS</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="omega-ai" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/OMEGA-AI-using-DeepSeek-R1" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="omega-ai">
+                        <p class="chip" style="--c: var(--layer-web)">web</p>
+                        <p>A custom AI assistant that integrates the DeepSeek-R1 reasoning model and tailors its behaviour to a personalized set of preferences, wrapped in a lightweight web interface.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">DeepSeek-R1</span><span class="pill">LLM</span><span class="pill">HTML · JS</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/OMEGA-AI-using-DeepSeek-R1" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="web" data-slug="dashboard-viewer" style="--c: var(--layer-web)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/dashboard-viewer.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">web</span><span class="proj-lang">HTML</span></div>
+                        <h3 class="proj-title">Dashboard Viewer</h3>
+                        <p class="proj-desc">A lightweight, browser-based dashboard viewer for presenting data and metrics in a clean, shareable single-page interface.</p>
+                        <div class="pills"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="dashboard-viewer" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Dashboard-Viewer" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="dashboard-viewer">
+                        <p class="chip" style="--c: var(--layer-web)">web</p>
+                        <p>A lightweight, browser-based dashboard viewer for presenting data and metrics in a clean, shareable single-page interface.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">HTML</span><span class="pill">CSS</span><span class="pill">JavaScript</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Dashboard-Viewer" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="web" data-slug="streams-quiz-service" style="--c: var(--layer-web)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/streams-quiz-service.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">web</span><span class="proj-lang">Web</span></div>
+                        <h3 class="proj-title">Streams Quiz Service</h3>
+                        <p class="proj-desc">A quiz service built during my time at Streams Tech — delivering question sets and scoring through a clean, server-rendered web flow.</p>
+                        <div class="pills"><span class="pill">Web</span><span class="pill">Backend</span><span class="pill">Quiz Engine</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="streams-quiz-service" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Streams-Quiz-Service" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="streams-quiz-service">
+                        <p class="chip" style="--c: var(--layer-web)">web</p>
+                        <p>A quiz service built during my time at Streams Tech — delivering question sets and scoring through a clean, server-rendered web flow.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">Web</span><span class="pill">Backend</span><span class="pill">Quiz Engine</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Streams-Quiz-Service" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                </ul>
+            </div>
+            <p class="proj-empty" hidden>No projects in this category yet.</p>
+        </div>
+    </section>
+
+    <!-- ============ SKILLS ============ -->
+    <section id="skills" class="section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <p class="sec-eyebrow">skills</p>
+                <h2 class="sec-title">Skills</h2>
+                <p class="sec-sub">A snapshot of my technical capabilities — from silicon to software, with self-rated proficiency.</p>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card card" style="--sk-c: var(--layer-vlsi)" data-reveal>
+                    <h3 class="sk-title">Circuit Design</h3>
+                    <ul>
+                        <li class="sk-row"><span class="sk-name">Cadence Virtuoso</span><span class="sk-pct" data-skill="90">90%</span><span class="sk-bar"><span class="sk-fill" data-skill="90" style="--sk: 90%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">VLSI Design</span><span class="sk-pct" data-skill="85">85%</span><span class="sk-bar"><span class="sk-fill" data-skill="85" style="--sk: 85%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">Digital Electronics</span><span class="sk-pct" data-skill="88">88%</span><span class="sk-bar"><span class="sk-fill" data-skill="88" style="--sk: 88%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">Analog Electronics</span><span class="sk-pct" data-skill="75">75%</span><span class="sk-bar"><span class="sk-fill" data-skill="75" style="--sk: 75%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">DRC / LVS / RCX</span><span class="sk-pct" data-skill="80">80%</span><span class="sk-bar"><span class="sk-fill" data-skill="80" style="--sk: 80%"></span></span></li>
+                    </ul>
+                </div>
+                <div class="skill-card card" style="--sk-c: var(--layer-web)" data-reveal>
+                    <h3 class="sk-title">Programming</h3>
+                    <ul>
+                        <li class="sk-row"><span class="sk-name">Python</span><span class="sk-pct" data-skill="92">92%</span><span class="sk-bar"><span class="sk-fill" data-skill="92" style="--sk: 92%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">C / C++</span><span class="sk-pct" data-skill="80">80%</span><span class="sk-bar"><span class="sk-fill" data-skill="80" style="--sk: 80%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">JavaScript</span><span class="sk-pct" data-skill="82">82%</span><span class="sk-bar"><span class="sk-fill" data-skill="82" style="--sk: 82%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">PHP</span><span class="sk-pct" data-skill="78">78%</span><span class="sk-bar"><span class="sk-fill" data-skill="78" style="--sk: 78%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">SQL</span><span class="sk-pct" data-skill="80">80%</span><span class="sk-bar"><span class="sk-fill" data-skill="80" style="--sk: 80%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">React</span><span class="sk-pct" data-skill="70">70%</span><span class="sk-bar"><span class="sk-fill" data-skill="70" style="--sk: 70%"></span></span></li>
+                    </ul>
+                </div>
+                <div class="skill-card card" style="--sk-c: var(--layer-ml)" data-reveal>
+                    <h3 class="sk-title">Data Science &amp; ML</h3>
+                    <ul>
+                        <li class="sk-row"><span class="sk-name">PyTorch</span><span class="sk-pct" data-skill="85">85%</span><span class="sk-bar"><span class="sk-fill" data-skill="85" style="--sk: 85%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">TensorFlow / Keras</span><span class="sk-pct" data-skill="80">80%</span><span class="sk-bar"><span class="sk-fill" data-skill="80" style="--sk: 80%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">scikit-learn</span><span class="sk-pct" data-skill="88">88%</span><span class="sk-bar"><span class="sk-fill" data-skill="88" style="--sk: 88%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">NumPy / Pandas</span><span class="sk-pct" data-skill="92">92%</span><span class="sk-bar"><span class="sk-fill" data-skill="92" style="--sk: 92%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">OpenCV</span><span class="sk-pct" data-skill="82">82%</span><span class="sk-bar"><span class="sk-fill" data-skill="82" style="--sk: 82%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">Matplotlib / Seaborn</span><span class="sk-pct" data-skill="85">85%</span><span class="sk-bar"><span class="sk-fill" data-skill="85" style="--sk: 85%"></span></span></li>
+                    </ul>
+                </div>
+                <div class="skill-card card" style="--sk-c: var(--layer-embedded)" data-reveal>
+                    <h3 class="sk-title">Tools &amp; Platforms</h3>
+                    <ul>
+                        <li class="sk-row"><span class="sk-name">Git / GitHub</span><span class="sk-pct" data-skill="90">90%</span><span class="sk-bar"><span class="sk-fill" data-skill="90" style="--sk: 90%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">Linux / Bash</span><span class="sk-pct" data-skill="78">78%</span><span class="sk-bar"><span class="sk-fill" data-skill="78" style="--sk: 78%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">VS Code</span><span class="sk-pct" data-skill="92">92%</span><span class="sk-bar"><span class="sk-fill" data-skill="92" style="--sk: 92%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">MATLAB</span><span class="sk-pct" data-skill="75">75%</span><span class="sk-bar"><span class="sk-fill" data-skill="75" style="--sk: 75%"></span></span></li>
+                        <li class="sk-row"><span class="sk-name">Arduino / ESP32</span><span class="sk-pct" data-skill="80">80%</span><span class="sk-bar"><span class="sk-fill" data-skill="80" style="--sk: 80%"></span></span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CERTIFICATIONS ============ -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <p class="sec-eyebrow">certifications</p>
+                <h2 class="sec-title">Certificates</h2>
+                <p class="sec-sub">Verified certifications across AI, machine learning, data science, programming, and engineering — click any card to open the original.</p>
+            </div>
+            <div class="cert-grid">
+                <a class="cert-card" href="Certificates/nafis_azmain_alp_2025_certificate_of_completion.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/nafis-azmain-alp-2025-certificate-of-completion.jpg" alt="2025 Aspire Leaders Program certificate of completion" loading="lazy" decoding="async" width="600" height="463" /></span>
+                    <span class="cert-body"><span class="cert-title">2025 Aspire Leaders Program</span><span class="cert-provider">Aspire Institute (founded at Harvard University)</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/nafis_azmain_alp_2025_letter_of_acknowledgement.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/nafis-azmain-alp-2025-letter-of-acknowledgement.jpg" alt="Aspire Leaders Program letter of acknowledgement" loading="lazy" decoding="async" width="600" height="776" /></span>
+                    <span class="cert-body"><span class="cert-title">Aspire Leaders Program — Letter of Acknowledgement</span><span class="cert-provider">Aspire Institute</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Coursera AJU0Z4CKQX0K.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/coursera-aju0z4ckqx0k.jpg" alt="Supervised Machine Learning: Regression and Classification certificate" loading="lazy" decoding="async" width="600" height="463" /></span>
+                    <span class="cert-body"><span class="cert-title">Supervised Machine Learning: Regression &amp; Classification</span><span class="cert-provider">DeepLearning.AI &amp; Stanford · Coursera</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Coursera OKLOA27EDPFU.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/coursera-okloa27edpfu.jpg" alt="Machine Learning with Python certificate" loading="lazy" decoding="async" width="600" height="463" /></span>
+                    <span class="cert-body"><span class="cert-title">Machine Learning with Python</span><span class="cert-provider">IBM · Coursera</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Coursera JINCKASB2Y9H.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/coursera-jinckasb2y9h.jpg" alt="Data Visualization with Python certificate" loading="lazy" decoding="async" width="600" height="463" /></span>
+                    <span class="cert-body"><span class="cert-title">Data Visualization with Python</span><span class="cert-provider">IBM · Coursera</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Coursera HEZNAJF6148H.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/coursera-heznajf6148h.jpg" alt="Data Science Math Skills certificate" loading="lazy" decoding="async" width="600" height="463" /></span>
+                    <span class="cert-body"><span class="cert-title">Data Science Math Skills</span><span class="cert-provider">Duke University · Coursera</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Coursera POJ1NJMG2PG3.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/coursera-poj1njmg2pg3.jpg" alt="Introduction to Structured Query Language (SQL) certificate" loading="lazy" decoding="async" width="600" height="463" /></span>
+                    <span class="cert-body"><span class="cert-title">Introduction to Structured Query Language (SQL)</span><span class="cert-provider">University of Michigan · Coursera</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Nafis Azmain - Pandas.png" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/Nafis Azmain - Pandas.png" alt="Pandas certificate of completion from Kaggle" loading="lazy" decoding="async" width="4800" height="2960" /></span>
+                    <span class="cert-body"><span class="cert-title">Pandas</span><span class="cert-provider">Kaggle</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/AI for Beginners.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/ai-for-beginners.jpg" alt="AI for Beginners certificate" loading="lazy" decoding="async" width="600" height="423" /></span>
+                    <span class="cert-body"><span class="cert-title">AI for Beginners</span><span class="cert-provider">HP LIFE</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/c907d382-c176-42f5-9df6-3a1637cfccc5.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/c907d382-c176-42f5-9df6-3a1637cfccc5.jpg" alt="Data Science and Analytics certificate" loading="lazy" decoding="async" width="600" height="423" /></span>
+                    <span class="cert-body"><span class="cert-title">Data Science &amp; Analytics</span><span class="cert-provider">HP LIFE</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/certificate.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/certificate.jpg" alt="Introduction to Git certificate" loading="lazy" decoding="async" width="600" height="346" /></span>
+                    <span class="cert-body"><span class="cert-title">Introduction to Git</span><span class="cert-provider">DataCamp</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/certificate (1).pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/certificate-1.jpg" alt="Introduction to Shell certificate" loading="lazy" decoding="async" width="600" height="346" /></span>
+                    <span class="cert-body"><span class="cert-title">Introduction to Shell</span><span class="cert-provider">DataCamp</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/certificate (2).pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/certificate-2.jpg" alt="Introduction to Data Engineering certificate" loading="lazy" decoding="async" width="600" height="346" /></span>
+                    <span class="cert-body"><span class="cert-title">Introduction to Data Engineering</span><span class="cert-provider">DataCamp</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/certificate (3).pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/certificate-3.jpg" alt="Containerization and Virtualization Concepts certificate" loading="lazy" decoding="async" width="600" height="346" /></span>
+                    <span class="cert-body"><span class="cert-title">Containerization &amp; Virtualization Concepts</span><span class="cert-provider">DataCamp</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Certificate(1).pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/certificate-1-2.jpg" alt="Introduction to Microsoft Promptflow certificate" loading="lazy" decoding="async" width="600" height="427" /></span>
+                    <span class="cert-body"><span class="cert-title">Introduction to Microsoft Promptflow</span><span class="cert-provider">Styava.dev</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Certificate(2).pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/certificate-2-2.jpg" alt="AI and Data Insights Hour certificate" loading="lazy" decoding="async" width="600" height="427" /></span>
+                    <span class="cert-body"><span class="cert-title">AI &amp; Data Insights Hour</span><span class="cert-provider">Styava.dev</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Nafis-116118-179.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/nafis-116118-179.jpg" alt="Workshop on Data Analytics with SQL certificate" loading="lazy" decoding="async" width="600" height="424" /></span>
+                    <span class="cert-body"><span class="cert-title">Workshop on Data Analytics with SQL</span><span class="cert-provider">Grameenphone Academy</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Nafis Azmain.pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/nafis-azmain.jpg" alt="VLSI and Semiconductor Techniques workshop certificate of achievement" loading="lazy" decoding="async" width="600" height="337" /></span>
+                    <span class="cert-body"><span class="cert-title">Mastering VLSI &amp; Semiconductor Techniques (Workshop)</span><span class="cert-provider">IEEE CUET WIE Affinity Group</span></span>
+                </a>
+                <a class="cert-card" href="Certificates/Nafis Azmain(1).pdf" target="_blank" rel="noopener" data-reveal>
+                    <span class="cert-thumb"><img src="Certificates/thumbs/nafis-azmain-1.jpg" alt="Face The Case 3.0 certificate" loading="lazy" decoding="async" width="600" height="337" /></span>
+                    <span class="cert-body"><span class="cert-title">Face The Case 3.0</span><span class="cert-provider">IEEE CUET Student Branch</span></span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ ACHIEVEMENTS ============ -->
+    <section id="achievements" class="section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <p class="sec-eyebrow">achievements</p>
+                <h2 class="sec-title">Achievements</h2>
+                <p class="sec-sub">Competitive wins, national recognition, and the leadership roles I've taken on along the way.</p>
+            </div>
+
+            <div class="stat-row" data-reveal>
+                <div class="stat"><div class="stat-num" data-stat="3" data-suffix="+">3+</div><div class="stat-label">Awards &amp; Honors</div></div>
+                <div class="stat"><div class="stat-num" data-stat="19" data-suffix="">19</div><div class="stat-label">Verified Certificates</div></div>
+                <div class="stat"><div class="stat-num" data-stat="20" data-suffix="+">20+</div><div class="stat-label">GitHub Projects</div></div>
+                <div class="stat"><div class="stat-num" data-stat="4" data-suffix="+">4+</div><div class="stat-label">Leadership Roles</div></div>
+            </div>
+
+            <div class="ach-grid">
+                <article class="ach-card" data-reveal>
+                    <div class="ach-media">
+                        <img src="assets/img/ach1-640.webp" srcset="assets/img/ach1-640.webp 640w, assets/img/ach1-1280.webp 1280w" sizes="(max-width: 700px) calc(100vw - 2rem), 400px" alt="Nafis Azmain receiving the 1st Runner-Up prize at Tech Carnival Industrial 2025" loading="lazy" decoding="async" width="640" height="692" />
+                    </div>
+                    <div class="ach-body">
+                        <div class="ach-top"><span class="chip" style="--c: var(--layer-embedded)">competition</span><span class="ach-year">2025</span></div>
+                        <h3 class="ach-title">1st Runner-Up — Tech Carnival (Industrial)</h3>
+                        <p class="ach-meta">MIE Fest · Southern IsT · Team NSW · 30,000 BDT prize</p>
+                        <p>Led Team NSW to 1st Runner-Up at the Tech Carnival Industrial competition, pitching and demonstrating an engineering solution before a panel of judges and earning a 30,000 BDT cash prize at the prize-giving ceremony.</p>
+                    </div>
+                </article>
+                <article class="ach-card" data-reveal>
+                    <div class="ach-media contain">
+                        <img src="Certificates/thumbs/nafis-azmain-alp-2025-certificate-of-completion.jpg" alt="2025 Aspire Leaders Program certificate of completion" loading="lazy" decoding="async" width="600" height="463" />
+                    </div>
+                    <div class="ach-body">
+                        <div class="ach-top"><span class="chip" style="--c: var(--layer-ml)">leadership</span><span class="ach-year">2025</span></div>
+                        <h3 class="ach-title">2025 Aspire Leaders Program</h3>
+                        <p class="ach-meta">Aspire Institute — founded at Harvard University</p>
+                        <p>One of just 9,362 finalists to complete the program out of 45,228 students in Cohort 4 — a rigorous leadership and social-entrepreneurship curriculum co-created with Harvard Business School faculty, covering leadership, trust, AI, and community impact.</p>
+                    </div>
+                </article>
+                <article class="ach-card" data-reveal>
+                    <div class="ach-stat" aria-hidden="true">
+                        <span class="big">Top 1.5%</span>
+                        <span class="cap">Nationwide</span>
+                    </div>
+                    <div class="ach-body">
+                        <div class="ach-top"><span class="chip" style="--c: var(--layer-cv)">academic</span><span class="ach-year">2022</span></div>
+                        <h3 class="ach-title">CUET Admission Test</h3>
+                        <p class="ach-meta">Chittagong University of Engineering &amp; Technology</p>
+                        <p>Earned a place in CUET's competitive Electronics &amp; Telecommunication Engineering program, ranking among the top 1.5% of more than 30,000 applicants nationwide.</p>
+                    </div>
+                </article>
+            </div>
+
+            <div class="section-head lead-head" data-reveal>
+                <h3 class="sec-title" style="font-size: var(--fs-h3)">Leadership &amp; Involvement</h3>
+                <p class="sec-sub">Roles where I've led, organized, and supported technical communities and teams.</p>
+            </div>
+            <div class="lead-grid">
+                <div class="lead-pill" data-reveal>
+                    <p class="lead-role">VLSI Design Intern</p>
+                    <p class="lead-org">Ulkasemi Pvt. Limited</p>
+                    <p class="lead-time">2025 – Present</p>
+                </div>
+                <div class="lead-pill" data-reveal>
+                    <p class="lead-role">Web Development Mentor</p>
+                    <p class="lead-org">Streams Tech Solutions</p>
+                    <p class="lead-time">2024</p>
+                </div>
+                <div class="lead-pill" data-reveal>
+                    <p class="lead-role">Team Lead — Team NSW</p>
+                    <p class="lead-org">Tech Carnival (Industrial) 2025</p>
+                    <p class="lead-time">2025</p>
+                </div>
+                <div class="lead-pill" data-reveal>
+                    <p class="lead-role">Open-Source Contributor</p>
+                    <p class="lead-org">github.com/LAXUS3333</p>
+                    <p class="lead-time">Ongoing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-head" data-reveal>
+                <p class="sec-eyebrow">contact</p>
+                <h2 class="sec-title">Contact</h2>
+                <p class="sec-sub">For collaboration, internships, or technical discussion — I'd love to hear from you.</p>
+            </div>
+            <div class="contact-grid">
+                <form class="contact-form card" action="https://formsubmit.co/nafiss3333@gmail.com" method="POST" data-reveal>
+                    <input type="hidden" name="_subject" value="New message from portfolio site" />
+                    <input type="hidden" name="_template" value="table" />
+                    <input type="hidden" name="_captcha" value="false" />
+                    <div class="honeypot" aria-hidden="true">
+                        <label for="hp-field">Leave this field empty</label>
+                        <input type="text" name="_honey" id="hp-field" tabindex="-1" autocomplete="off" />
+                    </div>
+                    <div class="field">
+                        <label for="name">Name</label>
+                        <input type="text" name="name" id="name" required autocomplete="name" />
+                    </div>
+                    <div class="field">
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" required autocomplete="email" />
+                    </div>
+                    <div class="field">
+                        <label for="subject">Subject</label>
+                        <input type="text" name="subject" id="subject" required autocomplete="off" />
+                    </div>
+                    <div class="field">
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">Send Message <span aria-hidden="true">→</span></button>
+                    <p class="form-status" role="status" aria-live="polite"></p>
+                </form>
+                <aside class="contact-info" data-reveal>
+                    <h3>Get in touch</h3>
+                    <p>I'm open to internships, research collaborations, full-time engineering roles, and interesting side projects. The fastest way to reach me is by email — I usually reply within a day.</p>
+                    <ul class="info-list">
+                        <li class="info-row">
+                            <span class="info-icon" aria-hidden="true"><svg><use href="#i-mail" /></svg></span>
+                            <div><p class="info-label">email</p><a href="mailto:nafiss3333@gmail.com" class="info-value">nafiss3333@gmail.com</a></div>
+                        </li>
+                        <li class="info-row">
+                            <span class="info-icon" aria-hidden="true"><svg><use href="#i-clock" /></svg></span>
+                            <div><p class="info-label">availability</p><p class="info-value">Open to internships &amp; full-time roles</p></div>
+                        </li>
+                        <li class="info-row">
+                            <span class="info-icon" aria-hidden="true"><svg><use href="#i-linkedin" /></svg></span>
+                            <div><p class="info-label">linkedin</p><a href="https://linkedin.com/in/NafisAzmain" target="_blank" rel="noopener" class="info-value">linkedin.com/in/NafisAzmain</a></div>
+                        </li>
+                        <li class="info-row">
+                            <span class="info-icon" aria-hidden="true"><svg><use href="#i-github" /></svg></span>
+                            <div><p class="info-label">github</p><a href="https://github.com/LAXUS3333" target="_blank" rel="noopener" class="info-value">github.com/LAXUS3333</a></div>
+                        </li>
+                        <li class="info-row">
+                            <span class="info-icon" aria-hidden="true"><svg><use href="#i-location" /></svg></span>
+                            <div><p class="info-label">location</p><p class="info-value">Chattogram, Bangladesh</p></div>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>© <span id="year">2026</span> Nafis Azmain. All rights reserved.</p>
+        <ul class="footer-socials">
+            <li><a href="https://github.com/LAXUS3333" target="_blank" rel="noopener">GitHub</a></li>
+            <li><a href="https://linkedin.com/in/NafisAzmain" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="mailto:nafiss3333@gmail.com">Email</a></li>
+        </ul>
+    </div>
+</footer>
+
+<button class="to-top" aria-label="Back to top" hidden>
+    <svg aria-hidden="true"><use href="#i-up" /></svg>
+</button>
+
+<dialog class="proj-dialog" id="proj-dialog" aria-labelledby="proj-dialog-title">
+    <div class="dialog-head">
+        <h3 id="proj-dialog-title"></h3>
+        <button class="dialog-close" aria-label="Close case study"><svg aria-hidden="true"><use href="#i-x" /></svg></button>
+    </div>
+    <div class="dialog-body"></div>
+</dialog>
+
+<div class="cursor-glow" aria-hidden="true"></div>
+
+</body>
+</html>

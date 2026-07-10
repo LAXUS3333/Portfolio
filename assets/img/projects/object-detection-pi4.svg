@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<g id="p">
+  <rect width="1600" height="900" fill="#090B0D"/>
+  <path d="M 40 66 V 40 H 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1534 40 H 1560 V 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1560 834 V 860 H 1534" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 66 860 H 40 V 834" fill="none" stroke="#232A33" stroke-width="3"/>
+  <text x="80" y="78" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#5A6472" text-anchor="start">YOLO · OPENCV · RASPBERRY PI 4</text>
+  <rect x="80" y="380" width="260" height="140" rx="10" fill="#10141B" stroke="#35B37E" stroke-width="3"/>
+  <text x="102" y="424" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#35B37E">CAMERA</text>
+  <rect x="460" y="360" width="320" height="180" rx="10" fill="#10141B" stroke="#35B37E" stroke-width="3"/>
+  <text x="482" y="404" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#35B37E">PI 4</text>
+  <text x="482" y="438" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">edge hardware</text>
+  <rect x="900" y="360" width="280" height="180" rx="10" fill="#10141B" stroke="#35B37E" stroke-width="3"/>
+  <text x="922" y="404" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#35B37E">YOLO</text>
+  <text x="922" y="438" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">OpenCV pipeline</text>
+  <rect x="1300" y="260" width="240" height="380" rx="10" fill="#10141B" stroke="#35B37E" stroke-width="3"/>
+  <text x="1322" y="304" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#35B37E">OUTPUT</text>
+  <text x="1322" y="338" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">real-time</text>
+  <rect x="1330" y="380" width="110" height="90" fill="none" stroke="#35B37E" stroke-width="3" stroke-dasharray="10 8"/>
+  <rect x="1390" y="500" width="120" height="100" fill="none" stroke="#35B37E" stroke-width="3" stroke-dasharray="10 8"/>
+  <path d="M 340 450 L 442 450" fill="none" stroke="#35B37E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 454 450 l -18 -10 v 20 z" fill="#35B37E"/>
+  <path d="M 780 450 L 882 450" fill="none" stroke="#35B37E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 894 450 l -18 -10 v 20 z" fill="#35B37E"/>
+  <path d="M 1180 450 L 1282 450" fill="none" stroke="#35B37E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1294 450 l -18 -10 v 20 z" fill="#35B37E"/>
+</g>
+</svg>

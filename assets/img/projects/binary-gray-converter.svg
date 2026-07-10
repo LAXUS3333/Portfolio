@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<g id="p">
+  <rect width="1600" height="900" fill="#090B0D"/>
+  <path d="M 40 66 V 40 H 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1534 40 H 1560 V 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1560 834 V 860 H 1534" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 66 860 H 40 V 834" fill="none" stroke="#232A33" stroke-width="3"/>
+  <text x="80" y="78" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#5A6472" text-anchor="start">BINARY to GRAY · COMBINATIONAL</text>
+  <text x="90" y="208" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">B3</text>
+  <text x="90" y="368" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">B2</text>
+  <text x="90" y="528" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">B1</text>
+  <text x="90" y="688" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">B0</text>
+  <path d="M 160 200 L 1380 200" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1392 200 l -18 -10 v 20 z" fill="#E4572E"/>
+  <text x="1410" y="208" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">G3</text>
+  <rect x="700" y="300" width="200" height="120" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="722" y="344" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">XOR</text>
+  <rect x="700" y="460" width="200" height="120" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="722" y="504" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">XOR</text>
+  <rect x="700" y="620" width="200" height="120" rx="10" fill="#10141B" stroke="#E4572E" stroke-width="3"/>
+  <text x="722" y="664" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E">XOR</text>
+  <path d="M 160 360 L 682 360" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 694 360 l -18 -10 v 20 z" fill="#E4572E"/>
+  <path d="M 400 200 L 400 396 L 682 396" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 694 396 l -18 -10 v 20 z" fill="#E4572E"/>
+  <path d="M 160 520 L 682 520" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 694 520 l -18 -10 v 20 z" fill="#E4572E"/>
+  <path d="M 460 360 L 460 556 L 682 556" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 694 556 l -18 -10 v 20 z" fill="#E4572E"/>
+  <path d="M 160 680 L 682 680" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 694 680 l -18 -10 v 20 z" fill="#E4572E"/>
+  <path d="M 520 520 L 520 716 L 682 716" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 694 716 l -18 -10 v 20 z" fill="#E4572E"/>
+  <path d="M 900 360 L 1380 360" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1392 360 l -18 -10 v 20 z" fill="#E4572E"/>
+  <text x="1410" y="368" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">G2</text>
+  <path d="M 900 520 L 1380 520" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1392 520 l -18 -10 v 20 z" fill="#E4572E"/>
+  <text x="1410" y="528" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">G1</text>
+  <path d="M 900 680 L 1380 680" fill="none" stroke="#E4572E" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1392 680 l -18 -10 v 20 z" fill="#E4572E"/>
+  <text x="1410" y="688" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#E4572E" text-anchor="start">G0</text>
+  <text x="700" y="820" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3" text-anchor="start">G(i) = B(i+1) xor B(i)</text>
+</g>
+</svg>

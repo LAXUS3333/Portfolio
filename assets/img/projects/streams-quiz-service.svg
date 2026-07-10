@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<g id="p">
+  <rect width="1600" height="900" fill="#090B0D"/>
+  <path d="M 40 66 V 40 H 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1534 40 H 1560 V 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1560 834 V 860 H 1534" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 66 860 H 40 V 834" fill="none" stroke="#232A33" stroke-width="3"/>
+  <text x="80" y="78" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#5A6472" text-anchor="start">QUIZ SERVICE · SERVER-RENDERED</text>
+  <rect x="80" y="390" width="280" height="140" rx="10" fill="#10141B" stroke="#3FA9C9" stroke-width="3"/>
+  <text x="102" y="434" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#3FA9C9">CLIENT</text>
+  <rect x="540" y="370" width="340" height="180" rx="10" fill="#10141B" stroke="#3FA9C9" stroke-width="3"/>
+  <text x="562" y="414" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#3FA9C9">SERVER</text>
+  <text x="562" y="448" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">server-rendered</text>
+  <rect x="1080" y="220" width="340" height="130" rx="10" fill="#10141B" stroke="#3FA9C9" stroke-width="3"/>
+  <text x="1102" y="264" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#3FA9C9">QUESTION SETS</text>
+  <rect x="1080" y="560" width="340" height="130" rx="10" fill="#10141B" stroke="#3FA9C9" stroke-width="3"/>
+  <text x="1102" y="604" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#3FA9C9">SCORING</text>
+  <path d="M 360 460 L 522 460" fill="none" stroke="#3FA9C9" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 534 460 l -18 -10 v 20 z" fill="#3FA9C9"/>
+  <path d="M 880 430 L 980 430 L 980 285 L 1062 285" fill="none" stroke="#3FA9C9" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1074 285 l -18 -10 v 20 z" fill="#3FA9C9"/>
+  <path d="M 880 490 L 980 490 L 980 625 L 1062 625" fill="none" stroke="#3FA9C9" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1074 625 l -18 -10 v 20 z" fill="#3FA9C9"/>
+</g>
+</svg>

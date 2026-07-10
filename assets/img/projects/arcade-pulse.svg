@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<g id="p">
+  <rect width="1600" height="900" fill="#090B0D"/>
+  <path d="M 40 66 V 40 H 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1534 40 H 1560 V 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1560 834 V 860 H 1534" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 66 860 H 40 V 834" fill="none" stroke="#232A33" stroke-width="3"/>
+  <text x="80" y="78" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#5A6472" text-anchor="start">ARCADE PULSE · PHP + MYSQL E-COMMERCE</text>
+  <rect x="560" y="120" width="200" height="90" rx="10" fill="#10141B" stroke="#3FA9C9" stroke-width="3"/>
+  <text x="582" y="164" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#3FA9C9">CATALOG</text>
+  <rect x="800" y="120" width="200" height="90" rx="10" fill="#10141B" stroke="#3FA9C9" stroke-width="3"/>
+  <text x="822" y="164" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#3FA9C9">CART</text>
+  <rect x="1040" y="120" width="200" height="90" rx="10" fill="#10141B" stroke="#3FA9C9" stroke-width="3"/>
+  <text x="1062" y="164" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#3FA9C9">CHECKOUT</text>
+  <rect x="80" y="400" width="320" height="180" rx="10" fill="#10141B" stroke="#3FA9C9" stroke-width="3"/>
+  <text x="102" y="444" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#3FA9C9">STOREFRONT</text>
+  <text x="102" y="478" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">HTML · CSS · JS</text>
+  <rect x="600" y="400" width="300" height="180" rx="10" fill="#10141B" stroke="#3FA9C9" stroke-width="3"/>
+  <text x="622" y="444" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#3FA9C9">PHP</text>
+  <text x="622" y="478" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">backend</text>
+  <rect x="1100" y="400" width="300" height="180" rx="10" fill="#10141B" stroke="#3FA9C9" stroke-width="3"/>
+  <text x="1122" y="444" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#3FA9C9">MYSQL</text>
+  <text x="1122" y="478" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">database</text>
+  <path d="M 660 210 L 660 330 L 700 330 L 700 382" fill="none" stroke="#3FA9C9" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 700 394 l -10 -18 h 20 z" fill="#3FA9C9"/>
+  <path d="M 900 210 L 900 330 L 770 330 L 770 382" fill="none" stroke="#3FA9C9" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 770 394 l -10 -18 h 20 z" fill="#3FA9C9"/>
+  <path d="M 1140 210 L 1140 330 L 840 330 L 840 382" fill="none" stroke="#3FA9C9" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 840 394 l -10 -18 h 20 z" fill="#3FA9C9"/>
+  <path d="M 400 490 L 582 490" fill="none" stroke="#3FA9C9" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 594 490 l -18 -10 v 20 z" fill="#3FA9C9"/>
+  <path d="M 900 490 L 1082 490" fill="none" stroke="#3FA9C9" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1094 490 l -18 -10 v 20 z" fill="#3FA9C9"/>
+</g>
+</svg>

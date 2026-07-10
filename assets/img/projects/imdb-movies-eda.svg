@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<g id="p">
+  <rect width="1600" height="900" fill="#090B0D"/>
+  <path d="M 40 66 V 40 H 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1534 40 H 1560 V 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1560 834 V 860 H 1534" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 66 860 H 40 V 834" fill="none" stroke="#232A33" stroke-width="3"/>
+  <text x="80" y="78" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#5A6472" text-anchor="start">IMDB EDA · RATINGS / GENRES / RUNTIME</text>
+  <rect x="80" y="380" width="300" height="140" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="102" y="424" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">IMDB CSV</text>
+  <text x="102" y="458" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">Kaggle</text>
+  <rect x="520" y="380" width="320" height="140" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="542" y="424" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">PANDAS·NUMPY</text>
+  <path d="M 1000 240 V 700 H 1520" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1040 640 L 1160 560 L 1280 590 L 1400 420 L 1500 330" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <text x="1000" y="760" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3" text-anchor="start">WHAT CORRELATES WITH SUCCESS</text>
+  <path d="M 380 450 L 502 450" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 514 450 l -18 -10 v 20 z" fill="#A97BFF"/>
+  <path d="M 840 450 L 942 450" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 954 450 l -18 -10 v 20 z" fill="#A97BFF"/>
+</g>
+</svg>

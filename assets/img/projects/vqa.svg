@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<g id="p">
+  <rect width="1600" height="900" fill="#090B0D"/>
+  <path d="M 40 66 V 40 H 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1534 40 H 1560 V 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1560 834 V 860 H 1534" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 66 860 H 40 V 834" fill="none" stroke="#232A33" stroke-width="3"/>
+  <text x="80" y="78" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#5A6472" text-anchor="start">VQA · VIT + BERT · GTTS</text>
+  <rect x="80" y="160" width="300" height="120" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="102" y="204" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">IMAGE</text>
+  <text x="102" y="238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">input</text>
+  <rect x="80" y="580" width="300" height="120" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="102" y="624" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">QUESTION</text>
+  <text x="102" y="658" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">text input</text>
+  <rect x="540" y="160" width="300" height="120" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="562" y="204" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">VIT</text>
+  <text x="562" y="238" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">image encoder</text>
+  <rect x="540" y="580" width="300" height="120" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="562" y="624" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">BERT</text>
+  <text x="562" y="658" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">text encoder</text>
+  <rect x="980" y="360" width="300" height="160" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="1002" y="404" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">FUSION</text>
+  <text x="1002" y="438" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">multimodal tfmr</text>
+  <rect x="1380" y="200" width="160" height="110" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="1402" y="244" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">ANSWER</text>
+  <rect x="1380" y="580" width="160" height="110" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="1402" y="624" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">GTTS</text>
+  <text x="1402" y="658" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">speech</text>
+  <path d="M 380 220 L 522 220" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 534 220 l -18 -10 v 20 z" fill="#A97BFF"/>
+  <path d="M 380 640 L 522 640" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 534 640 l -18 -10 v 20 z" fill="#A97BFF"/>
+  <path d="M 840 220 L 910 220 L 910 410 L 962 410" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 974 410 l -18 -10 v 20 z" fill="#A97BFF"/>
+  <path d="M 840 640 L 910 640 L 910 470 L 962 470" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 974 470 l -18 -10 v 20 z" fill="#A97BFF"/>
+  <path d="M 1280 410 L 1330 410 L 1330 255 L 1362 255" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1374 255 l -18 -10 v 20 z" fill="#A97BFF"/>
+  <path d="M 1460 310 L 1460 562" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1460 574 l -10 -18 h 20 z" fill="#A97BFF"/>
+</g>
+</svg>

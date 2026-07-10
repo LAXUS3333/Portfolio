@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" role="img">
+<g id="p">
+  <rect width="1600" height="900" fill="#090B0D"/>
+  <path d="M 40 66 V 40 H 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1534 40 H 1560 V 66" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 1560 834 V 860 H 1534" fill="none" stroke="#232A33" stroke-width="3"/>
+  <path d="M 66 860 H 40 V 834" fill="none" stroke="#232A33" stroke-width="3"/>
+  <text x="80" y="78" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#5A6472" text-anchor="start">DISEASE PREDICTION · SCIKIT-LEARN</text>
+  <rect x="80" y="380" width="300" height="140" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="102" y="424" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">SYMPTOMS</text>
+  <text x="102" y="458" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">patient data</text>
+  <rect x="500" y="360" width="320" height="180" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="522" y="404" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">SKLEARN</text>
+  <text x="522" y="438" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#8B95A3">compare clfs</text>
+  <rect x="960" y="200" width="260" height="110" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="982" y="244" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">CLF</text>
+  <rect x="960" y="400" width="260" height="110" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="982" y="444" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">CLF</text>
+  <rect x="960" y="600" width="260" height="110" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="982" y="644" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">CLF</text>
+  <rect x="1340" y="400" width="200" height="110" rx="10" fill="#10141B" stroke="#A97BFF" stroke-width="3"/>
+  <text x="1362" y="444" font-family="JetBrains Mono, ui-monospace, monospace" font-size="24" fill="#A97BFF">PREDICT</text>
+  <path d="M 380 450 L 482 450" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 494 450 l -18 -10 v 20 z" fill="#A97BFF"/>
+  <path d="M 820 420 L 890 420 L 890 255 L 942 255" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 954 255 l -18 -10 v 20 z" fill="#A97BFF"/>
+  <path d="M 820 455 L 942 455" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 954 455 l -18 -10 v 20 z" fill="#A97BFF"/>
+  <path d="M 820 490 L 890 490 L 890 655 L 942 655" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 954 655 l -18 -10 v 20 z" fill="#A97BFF"/>
+  <path d="M 1220 455 L 1322 455" fill="none" stroke="#A97BFF" stroke-width="3" pathLength="1" stroke-dasharray="1" style="stroke-dashoffset: var(--po, 0)"/>
+  <path d="M 1334 455 l -18 -10 v 20 z" fill="#A97BFF"/>
+</g>
+</svg>
