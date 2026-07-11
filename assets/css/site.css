@@ -182,8 +182,6 @@
     line-height: 1.12;
     margin: 0;
   }
-  /* balance is multi-pass layout — worth it on the big headings only */
-  h1, h2 { text-wrap: balance; }
   p { margin: 0; }
   ul, ol { margin: 0; padding: 0; }
   img, svg, canvas { display: block; max-width: 100%; }
@@ -260,7 +258,7 @@
   }
   .section:first-of-type { border-top: 0; }
 
-  .section-head { max-width: 62ch; margin-bottom: var(--step-2); }
+  .section-head { max-width: 80ch; margin-bottom: var(--step-2); }
 
   .sec-eyebrow {
     display: flex;
@@ -726,7 +724,6 @@
 
   .hero-intro {
     margin-top: var(--step-1);
-    max-width: 56ch;
     color: var(--text-dim);
     font-size: var(--fs-sub);
   }
@@ -847,7 +844,12 @@
   .about-photo {
     border-radius: var(--r-2);
     border: 1px solid var(--rule);
+    background: var(--bg-sunken);
+    padding: var(--step-0);
     margin-bottom: var(--step-0);
+    margin-inline: auto;
+    max-height: 420px;
+    width: auto;
   }
   .facts-title {
     font-family: var(--font-mono);
@@ -1166,11 +1168,17 @@
     box-shadow: var(--shadow-2);
   }
   .cert-thumb {
+    display: block;
+    position: relative;
     aspect-ratio: 3 / 2;
     background: var(--bg-sunken);
     border-bottom: 1px solid var(--rule);
   }
+  /* Absolutely positioned so the intrinsic image height can never stretch
+     the box — every thumb crops to the same 3:2 */
   .cert-thumb img {
+    position: absolute;
+    inset: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1202,11 +1210,18 @@
     overflow: hidden;
   }
   .ach-media {
+    position: relative;
     aspect-ratio: 16 / 10;
     background: var(--bg-sunken);
     border-bottom: 1px solid var(--rule);
   }
-  .ach-media img { width: 100%; height: 100%; object-fit: cover; }
+  .ach-media img {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   .ach-media.contain img { object-fit: contain; }
   .ach-stat {
     aspect-ratio: 16 / 10;
