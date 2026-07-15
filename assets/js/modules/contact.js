@@ -6,7 +6,7 @@ export function init() {
   if (!form) return;
   const statusEl = form.querySelector('.form-status');
   const submitBtn = form.querySelector('.submit-btn');
-  const AJAX_ENDPOINT = 'https://formsubmit.co/ajax/nafiss3333@gmail.com';
+  const AJAX_ENDPOINT = 'https://formsubmit.co/ajax/808b75ddb67368c1da36468ae7c7a247';
 
   form.addEventListener('submit', async (e) => {
     if (!('fetch' in window)) return; /* native POST proceeds */
