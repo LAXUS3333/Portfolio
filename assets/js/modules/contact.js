@@ -22,6 +22,7 @@ export function init() {
         method: 'POST',
         headers: { Accept: 'application/json' },
         body: new FormData(form),
+        signal: AbortSignal.timeout ? AbortSignal.timeout(15000) : undefined,
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       statusEl.dataset.state = 'ok';
