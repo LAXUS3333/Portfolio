@@ -1,4 +1,4 @@
-/* Contact form: AJAX submit to formsubmit.co so the user never leaves the
+/* Contact form: AJAX submit to Web3Forms so the user never leaves the
    page. Any failure of fetch itself falls back to a plain form POST. */
 
 export function init() {
@@ -6,7 +6,7 @@ export function init() {
   if (!form) return;
   const statusEl = form.querySelector('.form-status');
   const submitBtn = form.querySelector('.submit-btn');
-  const AJAX_ENDPOINT = 'https://formsubmit.co/ajax/808b75ddb67368c1da36468ae7c7a247';
+  const AJAX_ENDPOINT = 'https://api.web3forms.com/submit';
 
   form.addEventListener('submit', async (e) => {
     if (!('fetch' in window)) return; /* native POST proceeds */
@@ -18,10 +18,12 @@ export function init() {
     statusEl.textContent = 'Sending…';
 
     try {
+      const data = new FormData(form);
+      data.delete('redirect'); /* redirect is for the no-JS fallback only */
       const res = await fetch(AJAX_ENDPOINT, {
         method: 'POST',
         headers: { Accept: 'application/json' },
-        body: new FormData(form),
+        body: data,
         signal: AbortSignal.timeout ? AbortSignal.timeout(15000) : undefined,
       });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
