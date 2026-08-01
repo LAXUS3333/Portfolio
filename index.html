@@ -280,7 +280,7 @@
             <div class="section-head" data-reveal>
                 <p class="sec-eyebrow">projects</p>
                 <h2 class="sec-title">Projects</h2>
-                <p class="sec-sub">Real work from my GitHub — spanning VLSI &amp; digital design, machine learning, computer vision, edge AI, data analysis, and full-stack web. <a href="https://github.com/LAXUS3333" target="_blank" rel="noopener">See all on GitHub →</a></p>
+                <p class="sec-sub">Real work from my GitHub — spanning VLSI &amp; digital design, machine learning, computer vision, generative AI, data analysis, and full-stack web. <a href="https://github.com/LAXUS3333" target="_blank" rel="noopener">See all on GitHub →</a></p>
             </div>
 
             <div class="filters" role="group" aria-label="Filter projects" hidden>
@@ -289,6 +289,7 @@
                 <button class="filter-btn" data-filter="cv" aria-pressed="false">cv</button>
                 <button class="filter-btn" data-filter="vlsi" aria-pressed="false">vlsi</button>
                 <button class="filter-btn" data-filter="embedded" aria-pressed="false">embedded</button>
+                <button class="filter-btn" data-filter="genai" aria-pressed="false">genai</button>
                 <button class="filter-btn" data-filter="web" aria-pressed="false">web</button>
             </div>
             <p class="filter-status mono dim" aria-live="polite"></p>
@@ -414,6 +415,54 @@
                         <div class="pills"><span class="pill">Pandas</span><span class="pill">NumPy</span><span class="pill">Matplotlib</span></div>
                         <h4>links</h4>
                         <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/IMDb-Movies-Exploratory-Data-Analysis" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
+                    </template>
+
+                    <li class="proj-card" data-cat="genai" data-slug="pixel-story-ai" style="--c: var(--layer-genai)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/pixel-story-ai.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">genai</span><span class="proj-lang">TypeScript</span></div>
+                        <h3 class="proj-title">Pixel Story AI</h3>
+                        <p class="proj-metric">story → reel</p>
+                        <p class="proj-desc">An AI storytelling app that turns a written story into a short reel, pairing generative text flow with a video-backed composition experience.</p>
+                        <div class="pills"><span class="pill">TypeScript</span><span class="pill">AI Studio</span><span class="pill">Video generation</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="pixel-story-ai" hidden>case study →</button>
+                            <div class="proj-links">
+                                <a href="https://pixelstory-reels-949981233382.asia-southeast1.run.app/" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-ext" /></svg> Live Demo</a>
+                                <a href="https://github.com/LAXUS3333/Pixel_Story_Ai" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a>
+                            </div>
+                        </div>
+                    </li>
+                    <template data-proj="pixel-story-ai">
+                        <p class="chip" style="--c: var(--layer-genai)">genai</p>
+                        <p>An AI storytelling app that turns a written story into a short reel, pairing generative text flow with a video-backed composition experience.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">TypeScript</span><span class="pill">AI Studio</span><span class="pill">Video generation</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links">
+                            <a class="btn btn-ghost" href="https://pixelstory-reels-949981233382.asia-southeast1.run.app/" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-ext" /></svg> Live Demo</a>
+                            <a class="btn btn-ghost" href="https://github.com/LAXUS3333/Pixel_Story_Ai" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a>
+                        </div>
+                    </template>
+
+                    <li class="proj-card" data-cat="genai" data-slug="craig-ai-agent" style="--c: var(--layer-genai)" data-reveal>
+                        <div class="poster" aria-hidden="true"><svg viewBox="0 0 1600 900" focusable="false"><use href="assets/img/projects/craig-ai-agent.svg#p" /></svg></div>
+                        <div class="proj-meta-row"><span class="chip">genai</span><span class="proj-lang">Python</span></div>
+                        <h3 class="proj-title">Craig AI Agent</h3>
+                        <p class="proj-metric">resume → tailored draft</p>
+                        <p class="proj-desc">A local AI resume-tailoring assistant that analyses a job post, compares it with a CV, and generates a rewritten draft plus exportable output.</p>
+                        <div class="pills"><span class="pill">Python</span><span class="pill">Streamlit</span><span class="pill">LLM workflow</span></div>
+                        <div class="proj-foot">
+                            <button class="proj-open" data-open="craig-ai-agent" hidden>case study →</button>
+                            <div class="proj-links"><a href="https://github.com/LAXUS3333/Craig-AI-Agent" target="_blank" rel="noopener"><svg aria-hidden="true"><use href="#i-github" /></svg> Code</a></div>
+                        </div>
+                    </li>
+                    <template data-proj="craig-ai-agent">
+                        <p class="chip" style="--c: var(--layer-genai)">genai</p>
+                        <p>A local AI resume-tailoring assistant that analyses a job post, compares it with a CV, and generates a rewritten draft plus exportable output.</p>
+                        <h4>stack</h4>
+                        <div class="pills"><span class="pill">Python</span><span class="pill">Streamlit</span><span class="pill">LLM workflow</span></div>
+                        <h4>links</h4>
+                        <div class="dialog-links"><a class="btn btn-ghost" href="https://github.com/LAXUS3333/Craig-AI-Agent" target="_blank" rel="noopener"><svg aria-hidden="true" width="15" height="15"><use href="#i-github" /></svg> Code</a></div>
                     </template>
 
                     <li class="proj-card" data-cat="vlsi" data-slug="cla-adder-4bit" style="--c: var(--layer-vlsi)" data-reveal>
